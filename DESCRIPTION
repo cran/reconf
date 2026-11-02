@@ -1,7 +1,7 @@
 Package: reconf
 Title: Confidence Intervals for Random Effect Parameters in Linear
         Mixed Models
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: c(
     person("Karl Oskar", "Ekvall", email = "k.o.ekvall@gmail.com",
     role = c("aut", "cre", "cph")),
@@ -32,12 +32,12 @@ LinkingTo: Rcpp, RcppEigen
 Suggests: testthat (>= 3.0.0), numDeriv, knitr, rmarkdown
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-Config/roxygen2/version: 8.1.0
+Config/roxygen2/version: 8.1.1
 NeedsCompilation: yes
-Packaged: 2026-10-10 14:50:14 UTC; k.ekvall
+Packaged: 2026-11-02 16:46:19 UTC; karloskar
 Author: Karl Oskar Ekvall [aut, cre, cph],
   Yiqiao Zhang [ctb],
   Matias Shedden [ctb]
 Maintainer: Karl Oskar Ekvall <k.o.ekvall@gmail.com>
 Repository: CRAN
-Date/Publication: 2026-10-21 14:50:02 UTC
+Date/Publication: 2026-11-02 20:10:02 UTC

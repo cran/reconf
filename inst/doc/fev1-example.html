@@ -413,19 +413,15 @@ one observation; the variables are:</p>
 <div id="model" class="section level2">
 <h2>Model</h2>
 <p>We fit the linear mixed model</p>
-<p><span class="math display">\[
-\text{logfev1}_{it} = \beta_1 + \beta_2\,\text{age}_{it} +
-\beta_3\,\text{ht}_{it}
+<p><span class="math display">\[\text{logfev1}_{it} = \beta_1 +
+\beta_2\,\text{age}_{it} + \beta_3\,\text{ht}_{it}
   + \beta_4\,\text{baseage}_i + \beta_5\,\text{baseht}_i
-  + U_{i1} + U_{i2}\,\text{age}_{it} + E_{it},
-\]</span></p>
+  + U_{i1} + U_{i2}\,\text{age}_{it} + E_{it},\]</span></p>
 <p>where <span class="math inline">\((U_{i1}, U_{i2})^T \sim N(0,
 \Psi)\)</span> independently across subjects, <span class="math inline">\(E_{it} \sim N(0, \psi_4)\)</span> independently of
 the random effects, and</p>
-<p><span class="math display">\[
-\Psi = \begin{pmatrix} \psi_{1} &amp; \psi_{2} \\ \psi_{2} &amp;
-\psi_{3} \end{pmatrix}.
-\]</span></p>
+<p><span class="math display">\[\Psi = \begin{pmatrix} \psi_{1} &amp;
+\psi_{2} \\ \psi_{2} &amp; \psi_{3} \end{pmatrix}.\]</span></p>
 <p>The random effect covariance parameters <span class="math inline">\((\psi_{1}, \psi_{2}, \psi_{3})\)</span> are of
 primary interest here.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lmer</span>(</span>
